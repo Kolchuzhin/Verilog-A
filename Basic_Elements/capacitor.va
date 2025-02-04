@@ -1,0 +1,14 @@
+// Basic_Elements: Verilog-A model of a capacitor
+//
+//    +       -
+//  p o ----> o n
+
+module capacitor(p,n);
+ inout p,n;
+ electrical p,n;
+
+ parameter real c=0 from [0:inf);
+ analog 
+ 
+	I(p,n) <+ c*ddt(V(p,n));
+endmodule
