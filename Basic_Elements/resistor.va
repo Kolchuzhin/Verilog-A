@@ -3,6 +3,9 @@
 //     +       -
 //  t1 o ----> o t2
 
+`include "constants.vams"
+`include "disciplines.vams"
+
 module resistor (t1, t2);
 electrical t1, t2;
 parameter real r=1;
