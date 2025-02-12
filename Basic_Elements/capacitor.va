@@ -3,6 +3,9 @@
 //    +       -
 //  p o ----> o n
 
+`include "constants.vams"
+`include "disciplines.vams"
+
 module capacitor(p,n);
  inout p,n;
  electrical p,n;
